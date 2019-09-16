@@ -1,0 +1,38 @@
+{
+  "name": "dialogeditor",
+  "version": "1.0.0",
+  "description": "Dialog Editor that can be used with the prophecyjs framework. You ware free to implement support for your engine as well.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base=public/ --liveReload --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prophecyjs/DialogEditor.git"
+  },
+  "keywords": [
+    "editor",
+    "web",
+    "free",
+    "gui"
+  ],
+  "author": "Johnny Mast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prophecyjs/DialogEditor/issues"
+  },
+  "homepage": "https://github.com/prophecyjs/DialogEditor#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.1",
+    "jest": "^24.9.0",
+    "laravel-mix": "^4.1.4",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
