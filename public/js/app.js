@@ -17794,12 +17794,20 @@ module.exports = g;
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./editor */ "./resources/js/editor/index.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! ./editor */ "./resources/js/editor/index.js");
+
+/**
+ * Fire up the editor and run it.
+ */
+
+Object(_editor__WEBPACK_IMPORTED_MODULE_0__["default"])();
 
 /***/ }),
 
@@ -17980,30 +17988,59 @@ module.exports = {
 /*!**************************************!*\
   !*** ./resources/js/editor/index.js ***!
   \**************************************/
-/*! no exports provided */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contextmenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contextmenu */ "./resources/js/editor/contextmenu/index.js");
 /* harmony import */ var _contextmenu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_contextmenu__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var contextMenu = new _contextmenu__WEBPACK_IMPORTED_MODULE_0__["ContextMenu"]('.editor-background');
-/**
- * Create the contextmenu for the editor.
- */
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-contextMenu.add('Text', function () {
-  console.log('Text clicked');
-}).add('Node', function () {
-  console.log('Node clicked');
-}).add('Choice', function () {
-  console.log('Choice clicked');
-}).add('Set', function () {
-  console.log('Set clicked');
-}).add('Branch', function () {
-  console.log('Branch clicked');
-}).enable();
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+var Editor =
+/*#__PURE__*/
+function () {
+  function Editor() {
+    _classCallCheck(this, Editor);
+
+    this.contextMenu = new _contextmenu__WEBPACK_IMPORTED_MODULE_0__["ContextMenu"]('.editor-background');
+    this.createMenu();
+  }
+
+  _createClass(Editor, [{
+    key: "createMenu",
+    value: function createMenu() {
+      /**
+       * Create the contextmenu for the editor.
+       */
+      this.contextMenu.add('Text', function () {
+        console.log('Text clicked');
+      }).add('Node', function () {
+        console.log('Node clicked');
+      }).add('Choice', function () {
+        console.log('Choice clicked');
+      }).add('Set', function () {
+        console.log('Set clicked');
+      }).add('Branch', function () {
+        console.log('Branch clicked');
+      }).enable();
+    }
+  }]);
+
+  return Editor;
+}();
+
+var fireEditor = function fireEditor() {
+  return new Editor();
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (fireEditor);
 
 /***/ }),
 
