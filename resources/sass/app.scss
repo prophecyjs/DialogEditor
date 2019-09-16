@@ -1,0 +1,16 @@
+// Bootstrap
+@import '~bootstrap/scss/functions';
+@import "_variables";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "overwrites/main";
+@import "editor/main";
+
+// Variables
+body {
+  background: $black;
+  color: $white;
+
+  //background: black url('https://raw.githubusercontent.com/etodd/Lemma/master/Dialogger/g/grid.png')
+}
