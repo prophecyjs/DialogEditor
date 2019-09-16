@@ -18009,7 +18009,7 @@ function () {
   function Editor() {
     _classCallCheck(this, Editor);
 
-    this.contextMenu = new _contextmenu__WEBPACK_IMPORTED_MODULE_0__["ContextMenu"]('.editor-background');
+    this.contextMenu = new _contextmenu__WEBPACK_IMPORTED_MODULE_0__["ContextMenu"]('.editor');
     this.createMenu();
   }
 

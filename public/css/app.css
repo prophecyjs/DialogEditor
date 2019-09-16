@@ -10689,7 +10689,7 @@ a.text-dark:focus {
   background: #000;
 }
 
-.editor-background {
+.editor {
   position: absolute;
   background-image: linear-gradient(to right, #3d3939 1px, transparent 1px), linear-gradient(to bottom, #3d3939 1px, transparent 1px);
   background-size: 25px 25px;

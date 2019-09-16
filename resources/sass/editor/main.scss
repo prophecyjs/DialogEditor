@@ -5,7 +5,7 @@ $editor-col-height:           25 !default;
 $grid-gray: #3d3939 !default;
 
 
-.editor-background {
+.editor {
   position: absolute;
   background-image: linear-gradient(to right, $grid-gray 1px, transparent 1px), linear-gradient(to bottom, $grid-gray 1px, transparent 1px);
   background-size: $editor-col-width+px $editor-col-height+px;

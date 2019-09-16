@@ -2,7 +2,7 @@ import { ContextMenu } from './contextmenu'
 
 class Editor {
   constructor () {
-    this.contextMenu = new ContextMenu('.editor-background')
+    this.contextMenu = new ContextMenu('.editor')
     this.createMenu()
   }
 
