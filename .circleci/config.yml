@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/Walla
+    working_directory: ~/DialogEditor
     docker:
       - image: circleci/node:latest-browsers
     steps:
