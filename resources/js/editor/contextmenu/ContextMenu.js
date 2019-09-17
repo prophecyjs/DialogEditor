@@ -68,7 +68,7 @@ class ContextMenu {
    */
   enable () {
     window.addEventListener('contextmenu', this.rightClickHandler)
-    window.addEventListener('click', e => {
+    window.addEventListener('click', () => {
       this.toggleMenu('hide')
     })
     return this
@@ -88,8 +88,8 @@ class ContextMenu {
   /**
    * Set the position of the menu on the screen.
    *
-   * @param {number} left -
-   * @param {number} top -
+   * @param {number} left - The number of pixels on the x axis.
+   * @param {number} top - The number of pixels on the y axis.
    */
   setPosition (left, top) {
     this.menu.style.left = `${left}px`
