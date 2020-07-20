@@ -1,4 +1,4 @@
-import { ContextMenu } from './contextmenu'
+import { ContextMenu } from '../components/editor/contextmenu'
 
 class Editor {
   constructor () {

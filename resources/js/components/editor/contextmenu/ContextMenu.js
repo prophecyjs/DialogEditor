@@ -50,7 +50,8 @@ class ContextMenu {
    */
   onActivation (e) {
     e.preventDefault()
-    this.setPosition(e.clientX, e.clientY)
+    // this.setPosition(e.clientX, e.clientY)
+    this.setPosition(e.layerX, e.layerY)
     return false
   }
 
@@ -67,8 +68,8 @@ class ContextMenu {
    * We will replace this with our contextmenu.
    */
   enable () {
-    window.addEventListener('contextmenu', this.rightClickHandler)
-    window.addEventListener('click', () => {
+    this.target.addEventListener('contextmenu', this.rightClickHandler)
+    this.target.addEventListener('click', () => {
       this.toggleMenu('hide')
     })
     return this

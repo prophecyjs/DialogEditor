@@ -1,0 +1,11 @@
+Vue.component('navbaritem', require('./navbar/navbaritem.vue').default);
+Vue.component('navbar', require('./navbar/navbar.vue').default);
+Vue.component('button_group', require('./buttongroup/buttongroup.vue').default);
+Vue.component('button_group_button', require('./buttongroup/buttongroup_button.vue').default);
+Vue.component('button_group_content', require('./buttongroup/buttongroup_content.vue').default);
+Vue.component('dialog_player', require('./dialog_player.vue').default);
+Vue.component('dialog_characters', require('./dialog_characters.vue').default);
+Vue.component('dialog_variables', require('./dialog_variables.vue').default);
+Vue.component('sidebar', require('./sidebar.vue').default);
+Vue.component('editor_canvas', require('./canvas.vue').default);
+Vue.component('editor', require('./editor.vue').default);

@@ -10,9 +10,14 @@ let mix = require('laravel-mix');
  | file for your application, as well as bundling up your JS files.
  |
  */
+const tailwindcss = require('tailwindcss')
 
 mix.js('resources/js/app.js', 'public/js')
-  .sass('resources/sass/app.scss', 'public/css');
+  .sass('resources/sass/app.scss', 'public/css')
+  .options({
+    processCssUrls: false,
+    postCss: [ tailwindcss('./resources/js/tailwind/tailwind.config.js') ],
+  })
 
 // Full API
 // mix.js(src, output);
